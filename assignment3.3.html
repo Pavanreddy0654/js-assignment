@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head> 
+  <meta charset="utf-8"> 
+  <title>JavaScript Switch statement : Example-1</title> 
+ </head> 
+ <body> 
+  <h1>JavaScript : switch statement</h1> 
+  <form name="form1" action="#" method="post">
+    Input Grade type : 
+   <input type="text" name="text1"> 
+   <br>
+   <br> 
+   <input type="button" value="Marks check" onclick="marksgrade()"> 
+  </form> 
+  <script src="switch-statement-example1.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">function marksgrade()
+{
+grade = document.form1.text1.value;
+switch (grade)
+{
+case 'A+':
+console.log("Marks >= 90");
+break;
+case 'A':
+console.log("Marks [ >= 80 and <90 ]");
+break;
+case 'B+':
+console.log("Marks [ >= 70 and <80 ]");
+break;
+case 'B':
+console.log("Marks [ >= 60 and <70 ]");
+break;
+case 'C':
+console.log("Marks < 60");
+break;
+default:
+console.log("Wrong grade.........");
+}
+}</script></body></html>
