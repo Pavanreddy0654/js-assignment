@@ -1,0 +1,32 @@
+<!doctype html><html><head> 
+ <style type="text/css" id="dcoder_stylesheet">#div1 {
+     border:2px solid red;
+     background-color:cyan;
+     Heigh:250px;
+     Width:400px;
+     border-radius:10px;
+     color:blue;
+ 
+      }</style></head> 
+ <body> 
+  <center> 
+   <div id="div1"> 
+    <h1> Hello let's upgrade learning </h1> 
+   </div> 
+  </center>  
+ 
+<script type="text/javascript" id="dcoder_script">
+     var i = 0;
+     var j = 0;
+     function divchange()
+     {
+       var divtag=document.getElementById("div1");
+       var bgcolor=["yellow","red","blue","brown"];
+       var txtcolor=["red","yellow","brown","blue"];
+       divtag.style.backgroundColor=bgcolor[i];
+       divtag.style.color=txtcolor[j];
+       i=(i+1) %bgcolor.length;
+       j=(j+1) %txtcolor.length;
+  
+      }
+       setInterval(divchange,5000);</script></body></html>
