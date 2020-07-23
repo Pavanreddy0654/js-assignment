@@ -1,0 +1,41 @@
+<!doctype html><html><head></head> 
+ <body> 
+  <div id="clock">10:10:01</div> 
+  <script>
+       function displayclock () {
+         var time = new Date();
+         var hrs = time.getHours();
+         var min = time.getMinutes();
+         var sec = time.getseconds();
+         
+         if (hrs > 12){
+           hrs = hrs-12;
+         }
+         
+         if (hrs == 0){
+           hrs = 12;
+         }
+       
+         document.getElementById("clock").innerHTML = hrs + ':' + min + ':' +sec;
+         }
+         setInterval(dispalyclock, 500);
+  </script>
+  <form> 
+   <label for="number">ENTER NAME</label> 
+   <input type="text" id="t1"> 
+   <button type="button" name="submit" onclick="f1()">Submit</button> 
+  <p id="p1"></p>
+  </form> 
+  
+ 
+<script type="text/javascript" id="dcoder_script">      function f1()
+      {
+        var obj=document.getElementById('t1');
+        var str="Welcometo<u>"+obj.value+"</u>";
+        var obj2=document.getElementById('p1');
+        obj2.innerHTML=str;
+      
+      }
+       
+    
+    </script></body></html>
